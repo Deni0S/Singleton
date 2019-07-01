@@ -6,16 +6,18 @@
 //  Copyright © 2019 Денис Баринов. All rights reserved.
 //
 
+
 import UIKit
 
-class ViewController: UIViewController {
+class VKLoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Проинициализируем значениями 
+        let session = Session.vkauth
+        session.token = "567ygffgh"
+        session.userid = 45567778
         
     }
-
-
 }
-
