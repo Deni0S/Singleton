@@ -39,7 +39,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        delegate?.city = cities[indexPath.row]
         city = cities[indexPath.row]
-        self.closure?(city)
+        closure?(city)
     }
     
 }

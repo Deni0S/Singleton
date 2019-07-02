@@ -14,4 +14,5 @@ class Session {
     var userid = 0
     private init () {}
     static let vkauth = Session()
+    // Стандартное именование свойтва для синглтона обычно instance, shared или default
 }

@@ -20,8 +20,9 @@ class ViewController2: UIViewController { // , CityDelegate
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? TableViewController {
 //            vc.delegate = self
-            vc.closure = {[unowned self] city in
-                self.city = city}
+            vc.closure = {[weak self] city in
+                self?.city = city
+            }
         }
     }
 }
